@@ -1,0 +1,221 @@
+/* --- CORE COLORS --- */
+:root {
+  --deep-blue: #001f3f;      /* main background/nav/footer */
+  --deep-blue-light: #003366;/* text & accents */
+  --hero-overlay: rgba(0, 0, 0, 0.45);
+  --white: #ffffff;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background: var(--white);
+  color: var(--deep-blue-light);
+}
+
+/* ------------ HERO ------------- */
+.hero {
+  position: relative;
+  background: url("images/hero.jpg") center/cover no-repeat;
+  min-height: 65vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: var(--white);
+}
+
+/* dark overlay for contrast */
+.hero .overlay {
+  position: absolute;
+  inset: 0;
+  background: var(--hero-overlay);
+}
+
+.hero-content {
+  position: relative;   /* keep text above overlay */
+  z-index: 1;
+  padding: 0 1rem;
+}
+
+.hero h1 {
+  margin: 0 0 0.5rem;
+  font-size: 2.2rem;
+}
+
+.hero p {
+  margin: 0 0 1rem;
+  font-size: 1.1rem;
+}
+
+/* ------------ NAV ------------- */
+/* --- UPDATED NAVIGATION STYLES --- */
+
+nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+nav a {
+  display: inline-block;
+  padding: 10px 16px;
+  background-color: rgba(255, 255, 255, 0.15);
+  color: var(--white);
+  border-radius: 5px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+
+nav a:hover {
+  background-color: rgba(255, 255, 255, 0.25);
+  transform: scale(1.05);
+}
+
+/* ----------- MAIN -------------- */
+main {
+  padding: 2rem 1.2rem 3rem;
+}
+
+.intro, .services, .location { margin-bottom: 2.5rem; }
+
+/* services list styling */
+.services ul {
+  list-style: none;
+  padding: 0;
+}
+
+.services li {
+  background: #e6efff;
+  border-left: 5px solid var(--deep-blue);
+  padding: 0.8rem;
+  margin-bottom: 0.65rem;
+}
+
+/* ---------- FOOTER ------------- */
+footer {
+  background: var(--deep-blue);
+  color: var(--white);
+  text-align: center;
+  padding: 0.9rem 0.5rem;
+  font-size: 0.9rem;
+}
+
+
+/* APPOINTMENT FORM SECTION */
+.form-section {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+  background: #f0f8ff;
+  border-left: 5px solid var(--deep-blue);
+  border-radius: 8px;
+}
+
+.form-section h2 {
+  text-align: center;
+  color: var(--deep-blue);
+  margin-bottom: 1rem;
+}
+
+form label {
+  display: block;
+  margin-top: 1rem;
+  font-weight: bold;
+  color: var(--deep-blue-light);
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin-top: 5px;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+form button {
+  margin-top: 1.5rem;
+  padding: 12px;
+  width: 100%;
+  background-color: var(--deep-blue);
+  color: white;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+form button:hover {
+  background-color: #004080;
+}
+
+#responseMsg {
+  margin-top: 1rem;
+  text-align: center;
+  color: green;
+  font-weight: 600;
+}
+
+/* Optional smaller hero style */
+.small-hero {
+  min-height: 40vh;
+}
+
+
+
+
+/* CONTACT SECTION */
+.contact-section {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.contact-info p {
+  font-size: 1.1rem;
+  margin: 0.8rem 0;
+  color: var(--deep-blue);
+}
+
+.contact-info a {
+  color: var(--deep-blue-light);
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+.map-container {
+  margin-top: 2rem;
+  border: 2px solid var(--deep-blue);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* WHATSAPP FLOATING BUTTON */
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 100;
+}
+
+.whatsapp-float img {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}

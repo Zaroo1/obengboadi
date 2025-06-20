@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Book Appointment - Obeng Boadi OTC</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="hero small-hero">
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <h1>Book an Appointment</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="appointment.html">Book Appointment</a>
+        <a href="delivery.html">Request Delivery</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="form-section">
+      <h2>Fill the Form Below</h2>
+      <form id="appointmentForm">
+        <label for="fullName">Full Name</label>
+        <input type="text" id="fullName" name="Full Name" required />
+
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="Phone" required />
+
+        <label for="date">Preferred Date</label>
+        <input type="date" id="date" name="Preferred Date" required />
+
+        <label for="time">Preferred Time</label>
+        <input type="time" id="time" name="Preferred Time" required />
+
+        <label for="reason">Reason for Appointment</label>
+        <textarea id="reason" name="Reason" rows="4" required></textarea>
+
+        <button type="submit">Submit</button>
+        <p id="responseMsg"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Obeng Boadi OTC Medicine Shop. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
