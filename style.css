@@ -18,7 +18,7 @@ body {
 /* ------------ HERO ------------- */
 .hero {
   position: relative;
-  background: url("images/hero.jpg") center/cover no-repeat;
+  background: url("hero.jpg") center/cover no-repeat;
   min-height: 65vh;
   display: flex;
   align-items: center;
